@@ -14,3 +14,9 @@
 .new-comment {
   width: 80%;
 }
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}

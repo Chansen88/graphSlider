@@ -25,13 +25,11 @@
 
         Graphs.addComment = function(comment) {
           Graphs.current[0].comments.push(comment);
-        }
+        };
 
-        Graphs.swamp = function(graphOne, graphTwo) {
-          const temp = graphOne;
-          graphOne = graphTwo;
-          graphTwo = temp;
-        }
+        Graphs.removeComment= function(index) {
+          Graphs.current[0].comments.splice(index, 1);
+        };
 
         Graphs.populate();
         Graphs.setCurrent(Graphs.graphs[0])

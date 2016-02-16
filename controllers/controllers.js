@@ -18,6 +18,10 @@
           vm.newComment = '';
         };
 
+        vm.removeComment = function(index) {
+          Graphs.removeComment(index);
+        };
+
         vm.onDropComplete = function (index, obj, evt) {
             const otherObj = vm.graphs[index];
             const otherIndex = vm.graphs.indexOf(obj);

@@ -13,7 +13,7 @@
   <div class="graph">
     <img src="{{vm.current[0].img}}" alt="graph main" class="main-graph"/>
     <div ng-repeat="comment in vm.current[0].comments track by $index" class="comment">
-      <span>{{comment}}</span>
+      <span>{{comment}}</span><button type="button" ng-click="vm.removeComment($index)">X</button>
     </div>
     <br/>
     <div class="new-comment-container">
