@@ -15,8 +15,15 @@
   width: 80%;
 }
 
-.comment {
+.comment-header {
   display: flex;
   justify-content: space-between;
+}
+
+.commet {
   padding-bottom: 15px;
+}
+
+.time {
+  color: rgb(91, 91, 91);
 }
