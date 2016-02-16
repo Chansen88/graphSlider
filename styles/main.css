@@ -5,3 +5,12 @@
 .main-container {
   display: flex;
 }
+
+.new-comment-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-comment {
+  width: 80%;
+}

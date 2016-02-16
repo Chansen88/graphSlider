@@ -1,9 +1,10 @@
-<h1>Home</h1>
+<h1>GraphSlider</h1>
 <div class="main-container">
   <div class="graph-slider">
     <table>
       <tr ng-repeat="graph in vm.graphs track by $index" ng-drop="true" ng-drop-success="vm.onDropComplete($index, $data, $event)">
         <td ng-drag="true" ng-drag-data="graph">
+          <div>{{$index}}</div>
           <img ng-src="{{graph.img}}" ng-click="vm.setCurrent(graph)" alt="graph thumbnail" class="thumbnail" />
         </td>
       </tr>
@@ -15,7 +16,9 @@
       <span>{{comment}}</span>
     </div>
     <br/>
-    <input type="text" ng-model="vm.newComment">
-    <button type="button" ng-click="vm.addComment(vm.newComment)">Add</button>
+    <div class="new-comment-container">
+      <input type="text" placeholder="Write a note ..." ng-model="vm.newComment" class="new-comment">
+      <button type="button" ng-click="vm.addComment(vm.newComment)">Add</button>
+    </div>
   </div>
 </div>

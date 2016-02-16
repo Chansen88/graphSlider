@@ -11,7 +11,6 @@
         function Graph(img) {
           this.img = img;
           this.comments = [];
-          this.order = Graphs.graphs.length;
         };
 
         Graphs.populate = function() {
@@ -35,7 +34,7 @@
         }
 
         Graphs.populate();
-
+        Graphs.setCurrent(Graphs.graphs[0])
         return Graphs;
       }
   ]);

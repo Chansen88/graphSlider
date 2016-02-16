@@ -4,7 +4,7 @@
     .module('GraphSlider')
     .controller('MainController', ['$scope', 'Graphs',
       function($scope, Graphs) {
-        var vm = this;
+        const vm = this;
         vm.graphs = Graphs.graphs;
         vm.current = Graphs.current;
 
@@ -19,8 +19,8 @@
         };
 
         vm.onDropComplete = function (index, obj, evt) {
-            var otherObj = vm.graphs[index];
-            var otherIndex = vm.graphs.indexOf(obj);
+            const otherObj = vm.graphs[index];
+            const otherIndex = vm.graphs.indexOf(obj);
             vm.graphs[index] = obj;
             vm.graphs[otherIndex] = otherObj;
         };
