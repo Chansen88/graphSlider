@@ -1,6 +1,6 @@
 (function() {
   angular
-    .module('GraphSlider', ['ngRoute'])
+    .module('GraphSlider', ['ngRoute', 'ngDraggable'])
     .config(['$routeProvider',
       function($routeProvider) {
         $routeProvider
