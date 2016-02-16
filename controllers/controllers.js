@@ -5,7 +5,13 @@
     .controller('MainController', ['$scope', 'Graphs',
       function($scope, Graphs) {
         var vm = this;
-        vm.data = Graphs.data;
+        vm.graphs = Graphs.graphs;
+        vm.current = Graphs.current;
+
+        vm.setCurrent = function(graph) {
+          console.log(graph);
+          Graphs.setCurrent(graph);
+        };
       }
   ]);
 })();

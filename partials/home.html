@@ -1,2 +1,13 @@
 <h1>Home</h1>
-<h2>{{ vm.data }}</h2>
+<div class="graph-slider">
+  <table>
+    <tr ng-repeat="graph in vm.graphs">
+      <td>
+        <img ng-src="{{graph}}" ng-click="vm.setCurrent(graph)" alt="graph thumbnail" class="thumbnail" />
+      </td>
+    </tr>
+  </table>
+</div>
+<div class="graph">
+  <img src="{{vm.current[0]}}" alt="graph main" class="main-graph"/>
+</div>
