@@ -1,19 +1,5 @@
 <h1>GraphSlider</h1>
 <div class="main-container">
   <graph-slider></graph-slider>
-  <div class="graph">
-    <img src="{{vm.current[0].img}}" alt="graph main" class="main-graph"/>
-    <div ng-repeat="comment in vm.current[0].comments track by $index" class="comment">
-      <div class="comment-header">
-        <span class="time">{{comment.time | date:'medium'}}</span>
-        <button type="button" ng-click="vm.removeComment($index)">X</button>
-      </div>
-      <div>{{comment.msg}}</div>
-    </div>
-    <br/>
-    <div class="new-comment-container">
-      <input type="text" placeholder="Write a note ..." ng-model="vm.newComment" class="new-comment">
-      <button type="button" ng-click="vm.addComment(vm.newComment)">Add</button>
-    </div>
-  </div>
+  <main-graph class="graph"></maingraph>
 </div>

@@ -2,9 +2,9 @@
 (function() {
   angular
     .module('GraphSlider')
-    .directive('graphSlider', function() {
+    .directive('mainGraph', function() {
       return {
-        templateUrl: '/partials/graphslider.html'
+        templateUrl: '/partials/maingraph.html'
       };
     });
 })();
