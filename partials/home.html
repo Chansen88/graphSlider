@@ -1,15 +1,6 @@
 <h1>GraphSlider</h1>
 <div class="main-container">
-  <div class="graph-slider">
-    <table>
-      <tr ng-repeat="graph in vm.graphs track by $index" ng-drop="true" ng-drop-success="vm.onDropComplete($index, $data, $event)">
-        <td ng-drag="true" ng-drag-data="graph">
-          <div>{{$index}}</div>
-          <img ng-src="{{graph.img}}" ng-click="vm.setCurrent(graph)" alt="graph thumbnail" class="thumbnail" />
-        </td>
-      </tr>
-    </table>
-  </div>
+  <graph-slider></graph-slider>
   <div class="graph">
     <img src="{{vm.current[0].img}}" alt="graph main" class="main-graph"/>
     <div ng-repeat="comment in vm.current[0].comments track by $index" class="comment">

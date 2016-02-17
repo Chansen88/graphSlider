@@ -9,6 +9,11 @@
             controller: 'MainController',
             controllerAs: 'vm'
           })
+          .when('/new', {
+            templateUrl: '/partials/new.html',
+            controller: 'MainController',
+            controllerAs: 'vm'
+          })
           .otherwise({
             redirectTo: '/'
           });

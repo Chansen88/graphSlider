@@ -6,6 +6,9 @@
   display: flex;
 }
 
+.graph {
+  width: 600px;
+}
 .new-comment-container {
   display: flex;
   justify-content: space-between;
@@ -20,10 +23,11 @@
   justify-content: space-between;
 }
 
-.commet {
+.comment {
   padding-bottom: 15px;
 }
 
 .time {
   color: rgb(91, 91, 91);
+  font-size: 12px;
 }

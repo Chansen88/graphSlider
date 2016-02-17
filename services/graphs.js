@@ -24,6 +24,10 @@
           Graphs.graphs.push(new Graph('http://www.tradinggraphs.com/wp-content/uploads/2010/11/x-stock-graph.png'));
         };
 
+        Graphs.add = function(img) {
+          Graphs.graphs.push(new Graph(img));
+        };
+
         Graphs.setCurrent = function(graph) {
           Graphs.current[0] = graph;
         };
@@ -37,7 +41,7 @@
         };
 
         Graphs.populate();
-        Graphs.setCurrent(Graphs.graphs[0])
+        Graphs.setCurrent(Graphs.graphs[0]);
         return Graphs;
       }
   ]);
