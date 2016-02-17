@@ -12,6 +12,10 @@
           $location.path('/new');
         };
 
+        vm.back = function() {
+          $location.path('/');
+        };
+
         vm.newGraph = function(img) {
           Graphs.add(img);
           $location.path('/');

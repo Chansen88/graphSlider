@@ -1,4 +1,5 @@
 <span>Img Url: </span>
 <input type="text" name="name" ng-model="vm.newImg"><br/>
 <img ng-if="vm.newImg" ng-src="{{vm.newImg}}" alt="invalid url" class="thumbnail" /><br/>
-<button type="button" ng-click="vm.newGraph(vm.newImg)">Add new graph</button><br/>
+<button type="button" ng-click="vm.newGraph(vm.newImg)">Add new graph</button><br/><br/><br/>
+<button type="button" ng-click="vm.back()">Back</button>
